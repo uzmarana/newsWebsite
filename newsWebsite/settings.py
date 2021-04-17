@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'WorldNews.apps.WorldnewsConfig',
     'foodNews.apps.FoodnewsConfig',
+    'sportNews.apps.SportnewsConfig',
 ]
 
 MIDDLEWARE = [
