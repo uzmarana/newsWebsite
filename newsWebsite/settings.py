@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'foodNews.apps.FoodnewsConfig',
     'sportNews.apps.SportnewsConfig',
     'gamingNews.apps.GamingnewsConfig',
+    'healthNews.apps.healthNewConfig',
 ]
 
 MIDDLEWARE = [
