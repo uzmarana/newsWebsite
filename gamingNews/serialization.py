@@ -1,9 +1,9 @@
 from rest_framework import serializers
-from .models import Newfood
+from .models import ROBLOX
 
 
 class serialization(serializers.ModelSerializer):
     class Meta:
-        model = Newfood
+        model = ROBLOX
 
         fields = '__all__'

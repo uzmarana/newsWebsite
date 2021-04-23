@@ -1,6 +1,6 @@
 from django.shortcuts import render
 # from django.http import JsonResponse
-from .models import Newfood as cp
+from .models import cricketNews as cp
 from rest_framework.decorators import api_view
 from rest_framework import decorators, permissions
 from .serialization import serialization
@@ -34,12 +34,7 @@ def cricketNews(request):
         verbose_name_plural = 'cricket News'
 
 
-@decorators.api_view([""])
-@decorators.permission_classes([permissions.AllowAny])
-def createpost(request):
-
-
-@decorators.api_view([""])
+@decorators.api_view(["POST"])
 @decorators.permission_classes([permissions.AllowAny])
 def delete_post(request):
     # id = int(request.data['id'])

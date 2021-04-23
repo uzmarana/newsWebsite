@@ -7,8 +7,9 @@ from .serialization import serialization
 from django.shortcuts import get_object_or_404 as getobj
 # Create your views here.
 
- @decorators.api_view([""])
- @decorators.permission_classes([permissions.AllowAny])
+
+@decorators.api_view(["POST"])
+@decorators.permission_classes([permissions.AllowAny])
 def Newfood(request):
     # print(request)
     # postTittle = request.data['postTittle']
@@ -35,28 +36,11 @@ def Newfood(request):
 
 @decorators.api_view([""])
 @decorators.permission_classes([permissions.AllowAny])
-        def createpost(request):
-
-
-
-
-
-
-
- class Meta:
-        db_table = 'foodNews_createpost'
-        ordering = ['-timestamp']
-        verbose_name = 'create post'
-        verbose_name_plural = 'create post'
-
-
-@decorators.api_view([""])
-@decorators.permission_classes([permissions.AllowAny])
 def delete_post(request):
     # id = int(request.data['id'])
     # postTitle = request.data['post title']
     # obj = getobj(cp, id=id)
     # obj.delete()
     render(request, 'Newfood.html')
-     render(request, 'createpost.html')
+
   #  return JsonResponse("post deleted", safe=False)
