@@ -39,8 +39,8 @@ def cricketNews(request):
 def delete_post(request):
     # id = int(request.data['id'])
     # postTitle = request.data['post title']
-    # obj = getobj(cp, id=id)
+    # obj = getobj(cp, id=id)cricketNews
     # obj.delete()
-    render(request, 'cricketNews')
+    return (render(request, 'cricketNews.html'))
 
   #  return JsonResponse("post deleted", safe=False)
