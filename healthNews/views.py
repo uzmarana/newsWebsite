@@ -12,6 +12,7 @@ from django.shortcuts import get_object_or_404 as getobj
 
 
 def Corona(request):
+
     # print(request)
     # postTittle = request.data['postTittle']
     # post = request.data['post']
@@ -21,23 +22,25 @@ def Corona(request):
     # return JsonResponse(data)
   #  return (render(request, 'readpost.html'))
 
-    # @decorators.api_view(["POST"])
-    # @decorators.permission_classes([permissions.AllowAny])
-    # def readpost(request):
-   # data = cp.objects.all()
-   # serializer = serialization(data, many=True)
-    # return JsonResponse(serializer.data, safe=False)
+    render(request, 'Corona.html')
+# @decorators.api_view(["POST"])
+# @decorators.permission_classes([permissions.AllowAny])
+# def readpost(request):
+# data = cp.objects.all()
+# serializer = serialization(data, many=True)
+# return JsonResponse(serializer.data, safe=False)
 
-    class Meta:
-        db_table = 'healthNews_Corona'
-        ordering = ['-timestamp']
-        verbose_name = 'Corona'
-        verbose_name_plural = 'Corona'
+
+class Meta:
+    db_table = 'healthNews_Corona'
+    ordering = ['-timestamp']
+    verbose_name = 'Corona'
+    verbose_name_plural = 'Corona'
 
 
 # @decorators.api_view([""])
 # @decorators.permission_classes([permissions.AllowAny])
- #       def createpost(request):
+    #       def createpost(request):
 
 
 @decorators.api_view(["POST"])
