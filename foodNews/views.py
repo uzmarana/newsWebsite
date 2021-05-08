@@ -1,7 +1,7 @@
 from django.shortcuts import render
 # from django.http import JsonResponse
-from .models import Newfood as cp
-from .models import createfood as cp
+from .models import Newfood as nf
+from .models import createfood as cf
 from rest_framework.decorators import api_view
 from rest_framework import decorators, permissions
 from .serialization import serialization
@@ -21,11 +21,6 @@ def Newfood(request):
 def createfood(request):
     # print(request)
 
-    class Meta:
-        db_table = 'foodNews_createfood'
-        ordering = ['-timestamp']
-        verbose_name = 'create food'
-        verbose_name_plural = 'create food'
     # postTittle = request.data['postTittle']
     # post = request.data['post']
     # db = cp(postTittle=postTittle, post=post)

@@ -8,6 +8,6 @@ class Newfood(models.Model):
     post = models.CharField(max_length=10000, unique=False)
 
 
-class createpost(models.Model):
+class createfood(models.Model):
     postTittle = models.CharField(max_length=100, unique=False)
     post = models.CharField(max_length=10000, unique=False)
