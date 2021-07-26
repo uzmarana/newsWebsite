@@ -5,6 +5,7 @@ urlpatterns = [
 
     path('Newfood/', views.Newfood),
     path('createfood/', views.createfood),
+    path('rewiew/', views.rewiew),
 
 
 

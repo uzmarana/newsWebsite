@@ -43,6 +43,13 @@ def createfood(request):
         verbose_name_plural = 'New food'
 
 
+class Meta:
+    db_table = 'foodNews_rewiew'
+    ordering = ['-timestamp']
+    verbose_name = 'rewiew'
+    verbose_name_plural = 'rewiew'
+
+
 @decorators.api_view(["POST"])
 @decorators.permission_classes([permissions.AllowAny])
 def delete_post(request):
@@ -54,3 +61,8 @@ def delete_post(request):
 
 
 #  return JsonResponse("post deleted", safe=False)
+# @decorators.api_view(["POST"])
+# @decorators.permission_classes([permissions.AllowAny])
+def rewiew(request):
+
+    render(request, 'rewiew.html')
