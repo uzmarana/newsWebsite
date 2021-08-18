@@ -65,4 +65,4 @@ def delete_post(request):
 # @decorators.permission_classes([permissions.AllowAny])
 def rewiew(request):
 
-    render(request, 'rewiew.html')
+    return(render(request, 'rewiew.html'))
